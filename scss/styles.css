@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to left, #FF521B, #FC9E4F);
+  font-family: "Pathway Extreme", sans-serif;
+  color: #020122;
+}
+
+.navbar-brand {
+  font-family: "Lexend Zetta", sans-serif;
+}
+
+li a::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0;
+  top: 5px;
+  background: transparent;
+  transition: all 0.3s;
+}
+li a:hover::after, li a.active-nav::after {
+  width: 100%;
+  background: #020122;
+}
+
+#section-hero {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translateX(-50%);
+}
+#section-hero .about-me {
+  width: 475px;
+  height: 500px;
+  background-color: rgba(242, 243, 174, 0.4);
+}
+#section-hero .about-me h2 {
+  font-weight: 800;
+}
+
+#section-projets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#section-projets .about-me {
+  width: 95vw;
+  height: 500px;
+  background-color: rgba(242, 243, 174, 0.4);
+}
+#section-projets .about-me h2 {
+  font-weight: 800;
+}/*# sourceMappingURL=styles.css.map */
