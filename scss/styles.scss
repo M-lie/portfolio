@@ -9,7 +9,9 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-image: linear-gradient(to left, #FF521B, #FC9E4F);
+    background-repeat: no-repeat;
     font-family: 'Pathway Extreme', sans-serif;
     color: $color-font;
 }
@@ -20,23 +22,30 @@ body {
 
 li {
     a {
-      &::after {
-        content: "";
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0;
-        top: 5px;
-        background: transparent;
-        transition: all 0.3s;  
-      }
-  
-      &:hover::after, &.active-nav::after {
-        width: 100%;
-        background: #020122;
-      }
+        &::after {
+            content: "";
+            display: block;
+            margin: auto;
+            height: 3px;
+            width: 0;
+            top: 5px;
+            background: transparent;
+            transition: all 0.3s;  
+        }
+    
+        &:hover::after, &.active-nav::after {
+            width: 100%;
+            background: #020122;
+        }
     }
-  }
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-collapse {
+      display: flex;
+      justify-content: end;
+    }
+}
 
 #section-hero {
     position: absolute;
@@ -57,16 +66,76 @@ li {
 
 #section-projets {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 100vh;
+    width: 100vw;
+    height: auto;
+    background-color: #FAF3DC;
 
-    .about-me {
-        width: 95vw;
-        height: 500px;
-        background-color:rgba(242, 243, 174, 0.4);
+    .title {
+        background-color:#F9AD69;
+        height: 20vh;
 
         h2 {
-            font-weight: 800;
+            font-size: 3rem;
+            font-weight: 700;
         }
+    }  
+
+    .projets {
+        display: grid; 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #section-projets {
+        .projets { 
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    }   
+}
+
+.projet {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+    
+        &:hover > *{
+            transform: translateY(0);
+        }
+    }  
+    
+    &__title {
+        font-size: 2em;
     }
 }
