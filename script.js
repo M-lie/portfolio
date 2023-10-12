@@ -6,9 +6,11 @@ gsap.from('.bi-mouse', {
 });
 
 const swiper = new Swiper(".mySwiper", {
-    direction: "vertical",
+    direction: "horizontal",
+
     pagination: {
       el: ".swiper-pagination",
-      clickable: true,
+      draggable: true,
+      dragSize: "10px",
     },
 });
