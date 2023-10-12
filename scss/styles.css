@@ -3,13 +3,7 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
   overflow-x: hidden;
-  background-image: linear-gradient(to left, #FF521B, #FC9E4F);
-  background-repeat: no-repeat;
   font-family: "Pathway Extreme", sans-serif;
   color: #020122;
 }
@@ -40,10 +34,11 @@ li a:hover::after, li a.active-nav::after {
   }
 }
 #section-hero {
-  position: absolute;
-  left: 50%;
-  top: 25%;
-  transform: translateX(-50%);
+  height: 100vh;
+  background-image: linear-gradient(to left, #FF521B, #FC9E4F);
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 #section-hero .about-me {
   width: 475px;
@@ -54,43 +49,91 @@ li a:hover::after, li a.active-nav::after {
   font-weight: 800;
 }
 
+/*
 #section-projets {
-  position: absolute;
-  top: 100vh;
-  width: 100vw;
-  height: auto;
+    background-color: #FAF3DC;
+
+    .container-fluid {
+        padding: 0;
+
+        .title {
+            background-color:#F9AD69;
+            height: 20vh;
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+        }  
+    }
+}
+*/
+/*
+.projet {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+
+        &:hover > *{
+            transform: translateY(0);
+        }
+    }  
+
+    &__title {
+        font-size: 2em;
+    }
+}
+*/
+#section-mentions {
   background-color: #FAF3DC;
 }
-#section-projets .title {
+#section-mentions .container-fluid {
+  padding: 0;
+}
+#section-mentions .container-fluid .title {
   background-color: #F9AD69;
   height: 20vh;
 }
-#section-projets .title h2 {
+#section-mentions .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
 }
-#section-projets .projets {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
 
-@media screen and (max-width: 767px) {
-  #section-projets .projets {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-}
-.projet {
+.mention {
   position: relative;
 }
-.projet__img {
+.mention__img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.projet__overlay {
+.mention__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,16 +148,31 @@ li a:hover::after, li a.active-nav::after {
   opacity: 0;
   transition: opacity 0.25s;
 }
-.projet__overlay:hover {
+.mention__overlay:hover {
   opacity: 1;
 }
-.projet__overlay > * {
+.mention__overlay > * {
   transform: translateY(20px);
   transition: transform 0.25s;
 }
-.projet__overlay:hover > * {
+.mention__overlay:hover > * {
   transform: translateY(0);
 }
-.projet__title {
+.mention__title {
   font-size: 2em;
+}
+
+#section-about {
+  background-color: #FAF3DC;
+}
+#section-about .container-fluid {
+  padding: 0;
+}
+#section-about .container-fluid .title {
+  background-color: #F9AD69;
+  height: 20vh;
+}
+#section-about .container-fluid .title h2 {
+  font-size: 3rem;
+  font-weight: 700;
 }/*# sourceMappingURL=styles.css.map */
