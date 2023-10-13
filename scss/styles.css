@@ -202,6 +202,7 @@ footer {
   background-image: url(../medias/projet_cristal_hero.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
@@ -240,6 +241,7 @@ footer {
   background-image: url(../medias/projet_arkadas_hero.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
@@ -278,6 +280,7 @@ footer {
   background-image: url(../medias/projet_gema_hero.png);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
 }

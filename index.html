@@ -20,7 +20,7 @@
             <div class="container">
 
             <!-- Logo -->
-              <a class="navbar-brand" value="href" onclick="location.href='index.html'">caMéLIE</a>
+              <a class="navbar-brand" value="href" onclick="location.href='index.html'" id="scrollspyHeading1">caMéLIE</a>
 
               <!-- Hamburger -->
               <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
@@ -36,18 +36,20 @@
               <div id="mainNav" class="collapse navbar-collapse">
                 <ul class="navbar-nav d-flex align-items-end">
                   <li class="nav-item">
-                    <a class="nav-link me-3" id="no1" href="#">Projets</a>
+                    <a class="nav-link me-3" id="no1" href="#scrollspyHeading2">Projets</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link me-3" id="no2"  href="#">Mentions</a>
+                    <a class="nav-link me-3" id="no2"  href="#scrollspyHeading3">Mentions</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link me-3" id="no3" href="#">À propos</a>
+                    <a class="nav-link me-3" id="no3" href="#scrollspyHeading4">À propos</a>
                   </li>
                 </ul>
               </div>  
             </div>
         </nav>
+
+        
     </header>
 
     <main>
@@ -70,7 +72,7 @@
         <!-- Section Projets -->
         <section id="section-projets">
             <div class="container-fluid">
-                <div class="title d-flex justify-content-center align-items-center">
+                <div class="title d-flex justify-content-center align-items-center" id="scrollspyHeading2">
                     <h2 class="text-center">Mes projets</h2>
                 </div>
                 <div class="swiper mySwiper">
@@ -145,16 +147,28 @@
         <!-- Section Mentions -->
         <section id="section-mentions">
             <div class="container-fluid">
-                <div class="title d-flex justify-content-center align-items-center">
+                <div class="title d-flex justify-content-center align-items-center" id="scrollspyHeading3">
                     <h2 class="text-center">Prix reçus</h2>
                 </div>
                 <div class="mentions p-5">
-                    <div class="mention">
-                        <img src="medias/projet_arkadas.png" alt="" class="mention__img no1"/>
-                        <div class="mention__overlay no1 text-center">
-                            <div class="mention__title no1">Arkadas</div>
-                            <p class="mention__description no1"></p>
+                    <a value="href" onclick="location.href='arkadas.html'">
+                        <div class="mention">
+                            <img src="medias/projet_arkadas.png" alt="" class="mention__img no1"/>
+                            <div class="mention__overlay no1 text-center">
+                                <div class="mention__title no1">Arkadas
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                    </svg>
+                                </div>  
+                            </div>
                         </div>
+                    </a>
+
+                    <div class="mention__info pt-5">
+                        <h2>Grand gagnant de la deuxième édition du Concours d'Essais Audiovisuels tenus pour les étudiants et étudiantes de la Technique d'intégration multimédia du collège Montmorency et du Baccalauréat en Médias interactifs de l'UQAM.</h2>
+                        <p class="mention__description no1 pt-3">
+                            Le jury se composait de Jean-François Renaud, enseignant et coordonnateur du Baccalauréat en Médias interactifs de l’UQAM, Catherine Bazinet, co-fondatrice d’Aleo VR, Marianne Bourdages, coordonnatrice technique à l’ONF, Jade Chiasson chargée de projet chez Halo Création et enfin Maxime Girard, réalisateur chez DBCom Média.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -163,7 +177,7 @@
         <!-- Section À propos -->
         <section id="section-about">
             <div class="container-fluid">
-                <div class="title d-flex justify-content-center align-items-center">
+                <div class="title d-flex justify-content-center align-items-center"  id="scrollspyHeading4">
                     <h2 class="text-center">À propos</h2>
                 </div>
 
