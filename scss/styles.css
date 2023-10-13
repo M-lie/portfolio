@@ -6,7 +6,7 @@ body {
   overflow-x: hidden;
   font-family: "Pathway Extreme", sans-serif;
   color: #020122;
-  background-color: #020122;
+  background-color: #FAF3DC;
 }
 
 nav {
@@ -53,12 +53,10 @@ li a:hover::after, li a.active-nav::after {
   border-radius: 0%;
 }
 .hero .card h5 {
+  font-size: 2em;
   font-weight: 800;
 }
 
-#section-projets {
-  background-color: #FAF3DC;
-}
 #section-projets .container-fluid {
   padding: 0;
 }
@@ -71,15 +69,8 @@ li a:hover::after, li a.active-nav::after {
   font-weight: 700;
 }
 
-.swiper-pagination-bullet {
-  width: 40px;
-  height: 10px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-.swiper-pagination-bullet-active {
-  width: 60px;
-  background: #ffffff;
+.swiper-scrollbar {
+  background: #FAF3DC;
 }
 
 .projet {
@@ -120,9 +111,6 @@ li a:hover::after, li a.active-nav::after {
   font-size: 2em;
 }
 
-#section-mentions {
-  background-color: #FAF3DC;
-}
 #section-mentions .container-fluid {
   padding: 0;
 }
@@ -171,9 +159,6 @@ li a:hover::after, li a.active-nav::after {
   font-size: 2em;
 }
 
-#section-about {
-  background-color: #FAF3DC;
-}
 #section-about .container-fluid {
   padding: 0;
 }
@@ -184,6 +169,10 @@ li a:hover::after, li a.active-nav::after {
 #section-about .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+}
+
+footer {
+  background-color: #020122;
 }
 
 .footer {
@@ -206,4 +195,161 @@ li a:hover::after, li a.active-nav::after {
 .footer a:hover::after, .footer a.active-nav::after {
   width: 100%;
   background: #FF521B;
+}
+
+.cristal__hero {
+  height: 100vh;
+  background-image: url(../medias/projet_cristal_hero.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.cristal__hero .card {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(250, 243, 220, 0.4);
+  border: none;
+  border-radius: 0%;
+}
+.cristal__hero .card h5 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+#cristal__section-concept .container-fluid {
+  padding: 0;
+}
+
+#cristal__presentation {
+  height: 100vh;
+  background-image: url(../medias/projet_cristal.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+#cristal__presentation video {
+  width: 100%;
+  height: 100%;
+}
+
+.arkadas__hero {
+  height: 100vh;
+  background-image: url(../medias/projet_arkadas_hero.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.arkadas__hero .card {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(250, 243, 220, 0.4);
+  border: none;
+  border-radius: 0%;
+}
+.arkadas__hero .card h5 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+#arkadas__section-concept .container-fluid {
+  padding: 0;
+}
+
+#arkadas__presentation {
+  height: 100vh;
+  background-image: url(../medias/projet_arkadas.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+#arkadas__presentation video {
+  width: 100%;
+  height: 100%;
+}
+
+.gema__hero {
+  height: 100vh;
+  background-image: url(../medias/projet_gema_hero.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.gema__hero .card {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(250, 243, 220, 0.4);
+  border: none;
+  border-radius: 0%;
+}
+.gema__hero .card h5 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+#gema__section-concept .container-fluid {
+  padding: 0;
+}
+
+#gema__presentation {
+  height: 100vh;
+  background-image: url(../medias/projet_gema.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+#gema__presentation video {
+  width: 100%;
+  height: 100%;
+}
+
+.scene__hero {
+  height: 100vh;
+  background-image: url(../medias/medium_shot_2_interieur.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.scene__hero .card {
+  width: 500px;
+  height: 500px;
+  background-color: rgba(250, 243, 220, 0.4);
+  border: none;
+  border-radius: 0%;
+}
+.scene__hero .card h5 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+#scene__section-concept .container-fluid {
+  padding: 0;
+}
+
+#scene__presentation .swiper-wrapper {
+  display: block !important;
+}
+#scene__presentation .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#scene__presentation .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=styles.css.map */
