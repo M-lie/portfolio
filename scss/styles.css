@@ -360,6 +360,7 @@ footer {
   background-image: url(../medias/medium_shot_2_interieur.jpg);
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
 }
