@@ -44,3 +44,6 @@ sentencesArr.forEach(sentence => {
   timeLine.to(".text", {duration: 1.5, text: sentence});
   animation.add(timeLine);
 });
+
+
+gsap.from(".bi-arrow-right", {x: "20%", yoyo: true, ease: "power1.inOut", repeat: -1});
