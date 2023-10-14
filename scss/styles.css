@@ -15,6 +15,10 @@ nav {
 
 .navbar-brand {
   font-family: "Lexend Zetta", sans-serif;
+  font-weight: 700;
+}
+.navbar-brand .letter {
+  color: #FF521B;
 }
 
 li a::after {
@@ -38,6 +42,29 @@ li a:hover::after, li a.active-nav::after {
     justify-content: end;
   }
 }
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #FAF3DC;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border: none;
+  border-radius: 0%;
+}
+.dropdown-menu a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
 .hero {
   height: 100vh;
   background-image: linear-gradient(to left, #FF521B, #FC9E4F);
@@ -56,6 +83,9 @@ li a:hover::after, li a.active-nav::after {
   font-size: 2em;
   font-weight: 800;
 }
+.hero .card h5 span {
+  color: #FAF3DC;
+}
 
 #section-projets .container-fluid {
   padding: 0;
@@ -69,8 +99,19 @@ li a:hover::after, li a.active-nav::after {
   font-weight: 700;
 }
 
-.swiper-scrollbar {
-  background: #FAF3DC;
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #FAF3DC;
+  width: 60px;
+  height: 80px;
+  background-color: #020122;
 }
 
 .projet {

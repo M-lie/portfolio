@@ -6,9 +6,9 @@ gsap.from('.bi-mouse', {
 });
 
 const swiper1 = new Swiper(".mySwiper", {
-  scrollbar: {
-    el: ".swiper-scrollbar",
-    hide: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -29,4 +29,18 @@ document.querySelector('.hamburger').addEventListener('click', function(){
 
 const swiper2 = new Swiper(".mySceneSwiper", {
   direction: "horizontal",
+});
+
+const sentencesArr = ["M-LIE", "Camélie"];
+
+let cursor = gsap.to(".cursor", {opacity: 0, ease: "power2.inOut", repeat: -1});
+
+gsap.from(".contenu svg", {x: "15%", yoyo: true, ease: "power1.inOut", repeat: -1});
+
+let animation = gsap.timeline({repeat: -1});
+
+sentencesArr.forEach(sentence => {
+  let timeLine = gsap.timeline({repeat: 1, yoyo: true, repeatDelay: 1});
+  timeLine.to(".text", {duration: 1.5, text: sentence});
+  animation.add(timeLine);
 });

@@ -19,10 +19,40 @@
         <nav class="navbar navbar-light fixed-top navbar-expand-lg">
             <div class="container">
 
-            <!-- Logo -->
-              <a class="navbar-brand" value="href" onclick="location.href='index.html'">caMéLIE</a>
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    ca<span class="letter">M</span>é<span class="letter">LIE</span>
+                </a>
 
+                <!-- Hamburger -->
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                    <svg viewBox="0 0 12 10" class="hamburger" height="30px" width="50px">
+                        <path d="M10,2 L2,2" class="upper" style="fill: none;stroke: #020122;stroke-linecap: round;"/>
+                        <path d="M2,5 L10,5" class="middle" style="fill: none;stroke: #020122;stroke-linecap: round;"/>
+                        <path d="M10,8 L2,8" class="lower" style="fill: none;stroke: #020122;stroke-linecap: round;"/>   
+                    </svg>
+                </button>
+              
+
+                <!-- Navigation -->
+                <div id="mainNav" class="collapse navbar-collapse">
+                    <ul class="navbar-nav d-flex align-items-end">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link me-3" id="no1" href="#scrollspyHeading2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Projets
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cristal.html">Cristal</a></li>
+                            <li><a class="dropdown-item" href="arkadas.html">Arkadas</a></li>
+                            <li><a class="dropdown-item" href="gema.html">Gema</a></li>
+                            <li><a class="dropdown-item" href="scene-3d.html">Scène 3D</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
         </nav>
+
     </header>
 
     <main>
@@ -62,7 +92,7 @@
 
         <section id="gema__presentation">
             <div class="container d-flex justify-content-center">
-                    <video src="" controls muted autoplay loop preload poster="medias/projet_gema.png"></video>
+                    <video src="medias/gema_final_v1.mp4" controls muted autoplay loop preload poster="medias/projet_gema.png"></video>
             </div>
         </section>
 
