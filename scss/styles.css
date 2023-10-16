@@ -368,21 +368,91 @@ footer {
   padding: 0;
 }
 
-#scene__presentation .swiper-wrapper {
-  display: block !important;
+#scene-presentation .container-fluid {
+  padding: 0;
 }
-#scene__presentation .swiper-wrapper .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#scene-presentation .container-fluid .title {
+  background-color: #F9AD69;
+  height: 15vh;
 }
-#scene__presentation .swiper-wrapper .swiper-slide img {
-  display: block;
+#scene-presentation .container-fluid .title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#scene-presentation .container-fluid .swiper-button-next {
+  right: 0;
+}
+#scene-presentation .container-fluid .swiper-button-prev {
+  left: 0;
+}
+#scene-presentation .container-fluid .swiper-button-next, #scene-presentation .container-fluid .swiper-button-prev {
+  color: #FAF3DC;
+  width: 60px;
+  height: 80px;
+  background-color: #020122;
+}
+
+.scene__img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+#section-processus .container-fluid {
+  padding: 0;
+}
+#section-processus .container-fluid .title {
+  background-color: #F9AD69;
+  height: 15vh;
+}
+#section-processus .container-fluid .title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+#section-processus .container-fluid .swiper-button-next {
+  right: 0;
+}
+#section-processus .container-fluid .swiper-button-prev {
+  left: 0;
+}
+#section-processus .container-fluid .swiper-button-next, #section-processus .container-fluid .swiper-button-prev {
+  color: #FAF3DC;
+  width: 60px;
+  height: 80px;
+  background-color: #020122;
+}
+
+.processus {
+  position: relative;
+}
+.processus__img {
+  width: 100%;
+  height: 100%;
+}
+.processus__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.processus__overlay:hover {
+  opacity: 1;
+}
+.processus__overlay > * {
+  transform: translateY(20px);
+  transition: transform 0.25s;
+}
+.processus__overlay:hover > * {
+  transform: translateY(0);
+}
+.processus__title {
+  font-size: 2em;
 }/*# sourceMappingURL=styles.css.map */

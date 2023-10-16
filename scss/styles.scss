@@ -448,27 +448,115 @@ footer {
     }    
 }
 
-#scene__presentation {
-    .swiper-wrapper {
-        display: block !important;
+#scene-presentation {   
+    .container-fluid {
+        padding: 0;
 
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .title {
+            background-color:#F9AD69;
+            height: 15vh;
 
-            img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
             }
+        } 
+
+        .swiper-button-next {
+            right: 0;
+        }
+        
+        .swiper-button-prev {
+            left: 0;
+        }
+        
+        .swiper-button-next, .swiper-button-prev {
+            color: #FAF3DC;
+            width: 60px;
+            height: 80px;
+            background-color: #020122;
         }
     }
 }
 
+.scene {
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#section-processus {   
+    .container-fluid {
+        padding: 0;
+
+        .title {
+            background-color:#F9AD69;
+            height: 15vh;
+
+            h2 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+        } 
+
+        .swiper-button-next {
+            right: 0;
+        }
+        
+        .swiper-button-prev {
+            left: 0;
+        }
+        
+        .swiper-button-next, .swiper-button-prev {
+            color: #FAF3DC;
+            width: 60px;
+            height: 80px;
+            background-color: #020122;
+        }
+    }
+}
+
+.processus {
+    position: relative;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.25s;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        > * {
+            transform: translateY(20px);
+            transition: transform 0.25s;
+        }
+    
+        &:hover > *{
+            transform: translateY(0);
+        }
+    }  
+    
+    &__title {
+        font-size: 2em;
+    }
+}
 
 // FIN Projet - Scène 3D
