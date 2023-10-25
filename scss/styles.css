@@ -165,13 +165,19 @@ li a:hover::after, li a.active-nav::after {
   font-size: 3rem;
   font-weight: 700;
 }
+#section-mentions .container-fluid .card {
+  background-color: #FAF3DC;
+  border: none;
+}
 
 .mention {
   position: relative;
 }
 .mention__img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .mention__overlay {
   position: absolute;
