@@ -1,4 +1,4 @@
-$color-font : #020122;
+$color-font : #e9e3e6 /*#020122*/;
 
 * {
     box-sizing: border-box;
@@ -8,24 +8,27 @@ body {
     overflow-x: hidden;
     font-family: 'Pathway Extreme', sans-serif;
     color: $color-font;
-    background-color: #FAF3DC;
+    background-color: #b2b2b2/*#FAF3DC*/;
 }
 
 nav {
-    background-color: #FAF3DC;
+    background-color: #736f72/*#FAF3DC*/;
 }
 
 .navbar-brand {
     font-family: 'Lexend Zetta', sans-serif;
     font-weight: 700;
+    color: $color-font !important;
 
     .letter {
-        color:#FF521B;
+        color: #9a8f97/*#FF521B*/;
     }
 }
 
 li {
     a {
+        color: $color-font !important;
+
         &::after {
             content: "";
             display: block;
@@ -39,7 +42,7 @@ li {
     
         &:hover::after, &.active-nav::after {
             width: 100%;
-            background: #020122;
+            background: #9a8f97/*#020122*/;
         }
     }
 }
@@ -54,7 +57,7 @@ li {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #FAF3DC;
+    background-color: #736f72/*#FAF3DC*/;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -67,7 +70,7 @@ li {
         display: block;
 
         &:hover {
-            background-color: #ddd;
+            background-color: rgba(230, 230, 233, 0.4);
         }
     }
 }
@@ -79,7 +82,8 @@ li {
 
 .hero {
     height: 100vh;
-    background-image: linear-gradient(to left, #FF521B, #FC9E4F);
+    /*background-image: linear-gradient(to left, #FF521B, #FC9E4F);*/
+    background-image: linear-gradient(to left, #9a8f97, #c3baba);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -89,7 +93,8 @@ li {
     .card {
         width: 500px;
         height: 500px;
-        background-color:rgba(242, 243, 174, 0.4);
+        /*background-color: rgba(242, 243, 174, 0.4);*/
+        background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
 
@@ -98,7 +103,7 @@ li {
             font-weight: 800;
 
             span {
-                color: #FAF3DC;
+                color: #9a8f97/*#FAF3DC*/;
             }
         }
     } 
@@ -111,7 +116,7 @@ li {
         padding: 0;
 
         .title {
-            background-color:#F9AD69;
+            background-color: #736f72/*#F9AD69*/;
             height: 15vh;
 
             h2 {
@@ -134,7 +139,7 @@ li {
     color: #FAF3DC;
     width: 60px;
     height: 80px;
-    background-color: #020122;
+    background-color: #b2b2b2/*#020122*/;
 }
 
 .projet {
@@ -185,7 +190,7 @@ li {
         padding: 0;
 
         .title {
-            background-color:#F9AD69;
+            background-color:#736f72/*#F9AD69*/;
             height: 15vh;
     
             h2 {
@@ -195,7 +200,7 @@ li {
         } 
 
         .card {
-            background-color: #FAF3DC;
+            background-color: #b2b2b2;
             border: none;
         }
     }    
@@ -249,7 +254,7 @@ li {
         padding: 0;
 
         .title {
-            background-color:#F9AD69;
+            background-color:#736f72/*#F9AD69*/;
             height: 15vh;
     
             h2 {
@@ -268,7 +273,7 @@ footer {
     height: 20vh;
 
     p {
-        color: #FF521B !important;
+        color: #21897E !important;
         text-decoration: none;
     }
 }
@@ -287,7 +292,7 @@ footer {
     .card {
         width: 500px;
         height: 500px;
-        background-color:rgba(250, 243, 220, 0.4);
+        background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
 
@@ -338,7 +343,7 @@ footer {
     .card {
         width: 500px;
         height: 500px;
-        background-color:rgba(250, 243, 220, 0.4);
+        background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
 
@@ -387,7 +392,7 @@ footer {
     .card {
         width: 500px;
         height: 500px;
-        background-color:rgba(250, 243, 220, 0.4);
+        background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
 
@@ -437,7 +442,7 @@ footer {
     .card {
         width: 500px;
         height: 500px;
-        background-color:rgba(250, 243, 220, 0.4);
+        background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
 
@@ -480,7 +485,7 @@ footer {
             color: #FAF3DC;
             width: 60px;
             height: 80px;
-            background-color: #020122;
+            background-color: #b2b2b2;
         }
     }
 }
@@ -497,7 +502,7 @@ footer {
         padding: 0;
 
         .title {
-            background-color:#F9AD69;
+            background-color:#736f72;
             height: 15vh;
 
             h2 {
@@ -518,7 +523,7 @@ footer {
             color: #FAF3DC;
             width: 60px;
             height: 80px;
-            background-color: #020122;
+            background-color: #b2b2b2;
         }
     }
 }

@@ -6,6 +6,7 @@ gsap.from('.bi-caret-down-fill', {
 });
 
 const swiper1 = new Swiper(".mySwiper", {
+  autoplay: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
