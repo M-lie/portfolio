@@ -120,7 +120,7 @@ li a:hover::after, li a.active-nav::after {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #FAF3DC;
+  color: #e9e3e6;
   width: 60px;
   height: 80px;
   background-color: #b2b2b2;
@@ -416,7 +416,7 @@ footer {
   left: 0;
 }
 #scene-presentation .container-fluid .swiper-button-next, #scene-presentation .container-fluid .swiper-button-prev {
-  color: #FAF3DC;
+  color: #e9e3e6;
   width: 60px;
   height: 80px;
   background-color: #b2b2b2;
@@ -445,7 +445,7 @@ footer {
   left: 0;
 }
 #section-processus .container-fluid .swiper-button-next, #section-processus .container-fluid .swiper-button-prev {
-  color: #FAF3DC;
+  color: #e9e3e6;
   width: 60px;
   height: 80px;
   background-color: #b2b2b2;
