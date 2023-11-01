@@ -123,10 +123,10 @@ li a:hover::after, li a.active-nav::after {
 }
 
 .swiper-button-next, .swiper-button-prev {
-  color: #e9e3e6;
+  color: #08D993;
   width: 60px;
   height: 80px;
-  background-color: #13293D;
+  background-color: rgba(19, 41, 61, 0.4588235294);
 }
 
 .projet {
@@ -430,10 +430,10 @@ footer {
   left: 0;
 }
 #scene-presentation .container-fluid .swiper-button-next, #scene-presentation .container-fluid .swiper-button-prev {
-  color: #e9e3e6;
+  color: #08D993;
   width: 60px;
   height: 80px;
-  background-color: #13293D;
+  background-color: rgba(19, 41, 61, 0.4588235294);
 }
 
 .scene__img {
@@ -460,10 +460,10 @@ footer {
   left: 0;
 }
 #section-processus .container-fluid .swiper-button-next, #section-processus .container-fluid .swiper-button-prev {
-  color: #e9e3e6;
+  color: #08D993;
   width: 60px;
   height: 80px;
-  background-color: #13293D;
+  background-color: rgba(19, 41, 61, 0.4588235294);
 }
 
 .processus {
