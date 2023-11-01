@@ -19,7 +19,7 @@ nav {
   color: #E1EFE6 !important;
 }
 .navbar-brand .letter {
-  color: #3AF8B9;
+  color: #08D993;
 }
 
 .navbar-toggler {
@@ -83,6 +83,7 @@ li a:hover::after, li a.active-nav::after {
   justify-content: space-evenly;
   align-items: center;
   color: #13293D;
+  font-weight: 700;
 }
 .hero .card {
   width: 500px;
@@ -97,7 +98,7 @@ li a:hover::after, li a.active-nav::after {
   font-weight: 800;
 }
 .hero .card h5 span {
-  color: #3AF8B9;
+  color: #08D993;
 }
 
 #section-projets .container-fluid {
@@ -242,7 +243,7 @@ footer {
   height: 20vh;
 }
 .footer a {
-  color: #E1EFE6 !important;
+  color: #08D993 !important;
   text-decoration: none;
 }
 .footer a::after {
@@ -257,7 +258,7 @@ footer {
 }
 .footer a:hover::after, .footer a.active-nav::after {
   width: 100%;
-  background: #E1EFE6;
+  background: #08D993;
 }
 
 .cristal__hero {
@@ -276,6 +277,7 @@ footer {
   border: none;
   border-radius: 0%;
   color: #13293D !important;
+  font-weight: 700;
 }
 .cristal__hero .card h5 {
   font-size: 3em;
@@ -316,6 +318,7 @@ footer {
   border: none;
   border-radius: 0%;
   color: #13293D !important;
+  font-weight: 700;
 }
 .arkadas__hero .card h5 {
   font-size: 3em;
@@ -356,6 +359,7 @@ footer {
   border: none;
   border-radius: 0%;
   color: #13293D !important;
+  font-weight: 700;
 }
 .gema__hero .card h5 {
   font-size: 3em;
@@ -396,6 +400,7 @@ footer {
   border: none;
   border-radius: 0%;
   color: #13293D !important;
+  font-weight: 700;
 }
 .scene__hero .card h5 {
   font-size: 3em;

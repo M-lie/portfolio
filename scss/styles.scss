@@ -22,7 +22,7 @@ nav {
     color: $color-font !important;
 
     .letter {
-        color: #3AF8B9/*#FF521B*/;
+        color: #08D993/*#FF521B*/;
     }
 }
 
@@ -95,6 +95,7 @@ li {
     justify-content: space-evenly;
     align-items: center;
     color: #13293D;
+    font-weight: 700;
 
     .card {
         width: 500px;
@@ -109,7 +110,7 @@ li {
             font-weight: 800;
 
             span {
-                color: #3AF8B9/*#FAF3DC*/;
+                color: #08D993/*#FAF3DC*/;
             }
         }
     } 
@@ -282,7 +283,7 @@ footer {
     height: 20vh;
 
     a {
-        color: $color-font !important;
+        color: #08D993 !important;
         text-decoration: none;
     
         &::after {
@@ -298,7 +299,7 @@ footer {
     
         &:hover::after, &.active-nav::after {
           width: 100%;
-          background: $color-font;
+          background: #08D993;
         }
     }
 }
@@ -321,6 +322,7 @@ footer {
         border: none;
         border-radius: 0%;
         color: #13293D !important;
+        font-weight: 700;
 
         h5 {
             font-size: 3em;
@@ -373,6 +375,7 @@ footer {
         border: none;
         border-radius: 0%;
         color: #13293D !important;
+        font-weight: 700;
 
         h5 {
             font-size: 3em;
@@ -423,6 +426,7 @@ footer {
         border: none;
         border-radius: 0%;
         color: #13293D !important;
+        font-weight: 700;
 
         h5 {
             font-size: 3em;
@@ -474,6 +478,7 @@ footer {
         border: none;
         border-radius: 0%;
         color: #13293D !important;
+        font-weight: 700;
 
         h5 {
             font-size: 3em;
