@@ -5,21 +5,21 @@
 body {
   overflow-x: hidden;
   font-family: "Pathway Extreme", sans-serif;
-  color: #e9e3e6;
-  background-color: #b2b2b2;
+  color: #13293D;
+  background-color: #E1EFE6;
 }
 
 nav {
-  background-color: #736f72;
+  background-color: #13293D;
 }
 
 .navbar-brand {
   font-family: "Lexend Zetta", sans-serif;
   font-weight: 700;
-  color: #e9e3e6 !important;
+  color: #E1EFE6 !important;
 }
 .navbar-brand .letter {
-  color: #9a8f97;
+  color: #3AF8B9;
 }
 
 .navbar-toggler {
@@ -27,7 +27,7 @@ nav {
 }
 
 li a {
-  color: #e9e3e6 !important;
+  color: #E1EFE6 !important;
 }
 li a::after {
   content: "";
@@ -41,7 +41,7 @@ li a::after {
 }
 li a:hover::after, li a.active-nav::after {
   width: 100%;
-  background: #9a8f97;
+  background: #e9e3e6;
 }
 
 @media screen and (min-width: 992px) {
@@ -53,7 +53,7 @@ li a:hover::after, li a.active-nav::after {
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #736f72;
+  background-color: #13293D;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -76,18 +76,19 @@ li a:hover::after, li a.active-nav::after {
 .hero {
   height: 100vh;
   /*background-image: linear-gradient(to left, #FF521B, #FC9E4F);*/
-  background-image: linear-gradient(to left, #9a8f97, #c3baba);
+  background-image: linear-gradient(to left, #3AF8B9, #89FBD5);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  color: #13293D;
 }
 .hero .card {
   width: 500px;
   height: 500px;
   /*background-color: rgba(242, 243, 174, 0.4);*/
-  background-color: rgba(230, 230, 233, 0.4);
+  background-color: rgba(225, 239, 230, 0.7);
   border: none;
   border-radius: 0%;
 }
@@ -96,19 +97,20 @@ li a:hover::after, li a.active-nav::after {
   font-weight: 800;
 }
 .hero .card h5 span {
-  color: #9a8f97;
+  color: #3AF8B9;
 }
 
 #section-projets .container-fluid {
   padding: 0;
 }
 #section-projets .container-fluid .title {
-  background-color: #736f72;
+  background-color: #13293D;
   height: 15vh;
 }
 #section-projets .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #E1EFE6;
 }
 
 .swiper-button-next {
@@ -123,7 +125,7 @@ li a:hover::after, li a.active-nav::after {
   color: #e9e3e6;
   width: 60px;
   height: 80px;
-  background-color: #b2b2b2;
+  background-color: #13293D;
 }
 
 .projet {
@@ -168,15 +170,16 @@ li a:hover::after, li a.active-nav::after {
   padding: 0;
 }
 #section-mentions .container-fluid .title {
-  background-color: #736f72;
+  background-color: #13293D;
   height: 15vh;
 }
 #section-mentions .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #E1EFE6;
 }
 #section-mentions .container-fluid .card {
-  background-color: #b2b2b2;
+  background-color: #E1EFE6;
   border: none;
 }
 
@@ -222,23 +225,24 @@ li a:hover::after, li a.active-nav::after {
   padding: 0;
 }
 #section-about .container-fluid .title {
-  background-color: #736f72;
+  background-color: #13293D;
   height: 15vh;
 }
 #section-about .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #E1EFE6;
 }
 
 footer {
-  background-color: #e9e3e6;
+  background-color: #13293D;
 }
 
 .footer {
   height: 20vh;
 }
 .footer a {
-  color: #21897E !important;
+  color: #E1EFE6 !important;
   text-decoration: none;
 }
 .footer a::after {
@@ -253,7 +257,7 @@ footer {
 }
 .footer a:hover::after, .footer a.active-nav::after {
   width: 100%;
-  background: #21897E;
+  background: #E1EFE6;
 }
 
 .cristal__hero {
@@ -271,6 +275,7 @@ footer {
   background-color: rgba(230, 230, 233, 0.4);
   border: none;
   border-radius: 0%;
+  color: #13293D !important;
 }
 .cristal__hero .card h5 {
   font-size: 3em;
@@ -310,6 +315,7 @@ footer {
   background-color: rgba(230, 230, 233, 0.4);
   border: none;
   border-radius: 0%;
+  color: #13293D !important;
 }
 .arkadas__hero .card h5 {
   font-size: 3em;
@@ -349,6 +355,7 @@ footer {
   background-color: rgba(230, 230, 233, 0.4);
   border: none;
   border-radius: 0%;
+  color: #13293D !important;
 }
 .gema__hero .card h5 {
   font-size: 3em;
@@ -388,6 +395,7 @@ footer {
   background-color: rgba(230, 230, 233, 0.4);
   border: none;
   border-radius: 0%;
+  color: #13293D !important;
 }
 .scene__hero .card h5 {
   font-size: 3em;
@@ -402,12 +410,13 @@ footer {
   padding: 0;
 }
 #scene-presentation .container-fluid .title {
-  background-color: #F9AD69;
+  background-color: #13293D;
   height: 15vh;
 }
 #scene-presentation .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #E1EFE6;
 }
 #scene-presentation .container-fluid .swiper-button-next {
   right: 0;
@@ -419,7 +428,7 @@ footer {
   color: #e9e3e6;
   width: 60px;
   height: 80px;
-  background-color: #b2b2b2;
+  background-color: #13293D;
 }
 
 .scene__img {
@@ -431,12 +440,13 @@ footer {
   padding: 0;
 }
 #section-processus .container-fluid .title {
-  background-color: #736f72;
+  background-color: #13293D;
   height: 15vh;
 }
 #section-processus .container-fluid .title h2 {
   font-size: 3rem;
   font-weight: 700;
+  color: #E1EFE6;
 }
 #section-processus .container-fluid .swiper-button-next {
   right: 0;
@@ -448,7 +458,7 @@ footer {
   color: #e9e3e6;
   width: 60px;
   height: 80px;
-  background-color: #b2b2b2;
+  background-color: #13293D;
 }
 
 .processus {

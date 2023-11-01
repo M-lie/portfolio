@@ -1,4 +1,5 @@
-$color-font : #e9e3e6 /*#020122*/;
+$color-font : #E1EFE6/*#020122*/;
+
 
 * {
     box-sizing: border-box;
@@ -7,12 +8,12 @@ $color-font : #e9e3e6 /*#020122*/;
 body {
     overflow-x: hidden;
     font-family: 'Pathway Extreme', sans-serif;
-    color: $color-font;
-    background-color: #b2b2b2/*#FAF3DC*/;
+    color: #13293D;
+    background-color: #E1EFE6/*#FAF3DC*/;
 }
 
 nav {
-    background-color: #736f72/*#FAF3DC*/;
+    background-color: #13293D/*#FAF3DC*/;
 }
 
 .navbar-brand {
@@ -21,7 +22,7 @@ nav {
     color: $color-font !important;
 
     .letter {
-        color: #9a8f97/*#FF521B*/;
+        color: #3AF8B9/*#FF521B*/;
     }
 }
 
@@ -46,7 +47,7 @@ li {
     
         &:hover::after, &.active-nav::after {
             width: 100%;
-            background: #9a8f97/*#020122*/;
+            background: #e9e3e6/*#020122*/;
         }
     }
 }
@@ -61,7 +62,7 @@ li {
 .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: #736f72/*#FAF3DC*/;
+    background-color: #13293D/*#FAF3DC*/;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -87,18 +88,19 @@ li {
 .hero {
     height: 100vh;
     /*background-image: linear-gradient(to left, #FF521B, #FC9E4F);*/
-    background-image: linear-gradient(to left, #9a8f97, #c3baba);
+    background-image: linear-gradient(to left, #3AF8B9, #89FBD5);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    color: #13293D;
 
     .card {
         width: 500px;
         height: 500px;
         /*background-color: rgba(242, 243, 174, 0.4);*/
-        background-color: rgba(230, 230, 233, 0.4);
+        background-color: rgba(225, 239, 230, 0.7);
         border: none;
         border-radius: 0%;
 
@@ -107,7 +109,7 @@ li {
             font-weight: 800;
 
             span {
-                color: #9a8f97/*#FAF3DC*/;
+                color: #3AF8B9/*#FAF3DC*/;
             }
         }
     } 
@@ -120,12 +122,13 @@ li {
         padding: 0;
 
         .title {
-            background-color: #736f72/*#F9AD69*/;
+            background-color: #13293D/*#F9AD69*/;
             height: 15vh;
 
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: $color-font;
             }
         } 
     }
@@ -143,7 +146,7 @@ li {
     color: #e9e3e6;
     width: 60px;
     height: 80px;
-    background-color: #b2b2b2/*#020122*/;
+    background-color: #13293D;
 }
 
 .projet {
@@ -194,17 +197,18 @@ li {
         padding: 0;
 
         .title {
-            background-color:#736f72/*#F9AD69*/;
+            background-color:#13293D/*#F9AD69*/;
             height: 15vh;
     
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: $color-font;
             }
         } 
 
         .card {
-            background-color: #b2b2b2;
+            background-color: $color-font;
             border: none;
         }
     }    
@@ -258,26 +262,27 @@ li {
         padding: 0;
 
         .title {
-            background-color:#736f72/*#F9AD69*/;
+            background-color:#13293D/*#F9AD69*/;
             height: 15vh;
     
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: $color-font;
             }
         } 
     }    
 }
 
 footer {
-    background-color: $color-font;
+    background-color: #13293D;
 }
 
 .footer {
     height: 20vh;
 
     a {
-        color: #21897E !important;
+        color: $color-font !important;
         text-decoration: none;
     
         &::after {
@@ -293,7 +298,7 @@ footer {
     
         &:hover::after, &.active-nav::after {
           width: 100%;
-          background: #21897E;
+          background: $color-font;
         }
     }
 }
@@ -315,6 +320,7 @@ footer {
         background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
+        color: #13293D !important;
 
         h5 {
             font-size: 3em;
@@ -366,6 +372,7 @@ footer {
         background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
+        color: #13293D !important;
 
         h5 {
             font-size: 3em;
@@ -415,6 +422,7 @@ footer {
         background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
+        color: #13293D !important;
 
         h5 {
             font-size: 3em;
@@ -465,6 +473,7 @@ footer {
         background-color: rgba(230, 230, 233, 0.4);
         border: none;
         border-radius: 0%;
+        color: #13293D !important;
 
         h5 {
             font-size: 3em;
@@ -484,12 +493,13 @@ footer {
         padding: 0;
 
         .title {
-            background-color:#F9AD69;
+            background-color:#13293D;
             height: 15vh;
 
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: $color-font;
             }
         } 
 
@@ -505,7 +515,7 @@ footer {
             color:  #e9e3e6;
             width: 60px;
             height: 80px;
-            background-color: #b2b2b2;
+            background-color: #13293D;
         }
     }
 }
@@ -522,12 +532,13 @@ footer {
         padding: 0;
 
         .title {
-            background-color:#736f72;
+            background-color:#13293D;
             height: 15vh;
 
             h2 {
                 font-size: 3rem;
                 font-weight: 700;
+                color: $color-font;
             }
         } 
 
@@ -543,7 +554,7 @@ footer {
             color:  #e9e3e6;
             width: 60px;
             height: 80px;
-            background-color: #b2b2b2;
+            background-color: #13293D;
         }
     }
 }
